@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@drawable/chechinttime_reloj"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/chechinttime_reloj"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.CheckInTime"
+        tools:targetApi="31">
+        <activity
+            android:name=".Admin_Prof_perfil"
+            android:exported="false" />
+        <activity
+            android:name=".Admin_Prof_modificaAsistencia"
+            android:exported="false" />
+        <activity
+            android:name=".Admin_Prof_main"
+            android:exported="false" />
+        <activity
+            android:name=".Admin_Prof_lista"
+            android:exported="false" />
+        <activity
+            android:name=".Admin_Prof_horario"
+            android:exported="false" />
+        <activity
+            android:name=".Admin_Prof_configuraciones"
+            android:exported="false" />
+        <activity
+            android:name=".Admin_Prof_ayudaContacto"
+            android:exported="false" />
+        <activity
+            android:name=".Admin_Alum_perfil"
+            android:exported="false" />
+        <activity
+            android:name=".Admin_Alum_main"
+            android:exported="false" />
+        <activity
+            android:name=".Admin_Alum_horario"
+            android:exported="false" />
+        <activity
+            android:name=".Admin_Alum_configuraciones"
+            android:exported="false" />
+        <activity
+            android:name=".Admin_Alum_ayudaContacto"
+            android:exported="false" />
+        <activity
+            android:name=".Admin_Alum_asistencia"
+            android:exported="false" />
+        <activity
+            android:name=".Admin_configuracion"
+            android:exported="false" />
+        <activity
+            android:name=".Alumno_asistencia"
+            android:exported="false" />
+        <activity
+            android:name=".Profesor_horario"
+            android:exported="false" />
+        <activity
+            android:name=".Profesor_modificaAsistencia"
+            android:exported="false" />
+        <activity
+            android:name=".Profesor_lista"
+            android:exported="false" />
+        <activity
+            android:name=".Profesor_perfil"
+            android:exported="false" />
+        <activity
+            android:name=".Profesor_ayudaContacto"
+            android:exported="false" />
+        <activity
+            android:name=".Profesor_configuraciones"
+            android:exported="false" />
+        <activity
+            android:name=".Alumno_horario"
+            android:exported="false" />
+        <activity
+            android:name=".Profesor_main"
+            android:exported="false" />
+        <activity
+            android:name=".Admin_gestionUsuario"
+            android:exported="false" />
+        <activity
+            android:name=".Admin_formulario"
+            android:exported="false" />
+        <activity
+            android:name=".Admin_main"
+            android:exported="false" />
+        <activity
+            android:name=".Alumno_configuraciones"
+            android:exported="false" />
+        <activity
+            android:name=".Alumno_perfil"
+            android:exported="false" />
+        <activity
+            android:name=".Alumno_ayudaContacto"
+            android:exported="false" />
+        <activity
+            android:name=".Alumno_main"
+            android:exported="false" />
+        <activity
+            android:name=".Login"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
