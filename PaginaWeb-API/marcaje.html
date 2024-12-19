@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marcaje</title>
+    <link rel="stylesheet" href="marcaje.css">
+</head>
+<body>
+    <div class="dashboard">
+        <!-- Menú lateral -->
+        <aside class="sidebar">
+            <button class="menu-toggle" aria-label="Abrir menú">☰</button>
+            <nav class="menu">
+                <ul id="menu-items" style="display: none;"> <!-- Menú oculto inicialmente -->
+                    <li><span class="menu-item" id="inicio-btn">Inicio</span></li>
+                    <li><span class="menu-item" id="gestion-btn">Gestión de clase</span></li>
+                    <li><span class="menu-item" id="horario-btn">Horario</span></li>
+                    <li><span class="menu-item" id="marcaje-btn">Marcaje</span></li>
+                    <li><span class="menu-item" id="logout-btn">Cerrar sesión</span></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <!-- Contenido principal -->
+        <div class="main-content">
+            <!-- Encabezado -->
+            <header class="header">
+                <h2>Marcaje</h2>
+                <div class="header-icons">
+                    <span aria-label="Notificaciones">🔔</span>
+                    <span aria-label="Mensajes">💬</span>
+                    <span aria-label="Perfil">👤</span>
+                </div>
+            </header><br>
+
+            <div class="content">
+                <h2>Marcajes de los alumnos</h2>
+                <!-- Barra de búsqueda -->
+                <div class="search-bar">
+                    <input type="text" placeholder="Buscar por ID..." id="searchInput">
+                    <button id="searchButton">🔍</button> <!-- Botón de búsqueda -->
+                </div>
+
+                <!-- Tabla de marcajes -->
+                <table>
+                    <thead>
+                        <tr>
+                            <th>ID Alumno</th>
+                            <th>ID Marcaje</th>
+                            <th>Fecha Hora Entrada</th>
+                            <th>Fecha Hora Salida</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Filas de ejemplo -->
+                        <tr>
+                            <td>1</td>
+                            <td>1</td>
+                            <td>2024-12-01 08:30</td>
+                            <td>2024-12-01 15:30</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>2</td>
+                            <td>2024-12-01 09:00</td>
+                            <td>2024-12-01 16:00</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>3</td>
+                            <td>2024-12-02 08:45</td>
+                            <td>2024-12-02 15:45</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>4</td>
+                            <td>2024-12-02 09:15</td>
+                            <td>2024-12-02 16:15</td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>5</td>
+                            <td>2024-12-02 10:30</td>
+                            <td>2024-12-02 17:30</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <script src="marcaje.js"></script>
+</body>
+</html>

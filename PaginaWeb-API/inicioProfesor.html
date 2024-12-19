@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio Profesor</title>
+    <link rel="stylesheet" href="inicioProfesor.css">
+</head>
+<body>
+    <div class="dashboard">
+        <!-- Menú lateral -->
+        <aside class="sidebar">
+            <button class="menu-toggle">☰</button>
+            <nav class="menu">
+              <ul id="menu-items" style="display: none;"> <!-- Inicialmente oculto -->
+                  <li><span class="menu-item" id="inicio-btn">Inicio</span></li>
+                  <li><span class="menu-item" id="gestion-btn">Gestión de clase</span></li>
+                  <li><span class="menu-item" id="asistencia-btn">Asistencia</span></li>
+                  <li><span class="menu-item" id="marcaje-btn">Marcaje</span></li>
+                  <li><span class="menu-item" id="logout-btn">Cerrar sesión</span></li>
+                </ul>
+          </nav>
+        </aside>
+
+        <!-- Contenido principal -->
+        <div class="main-content">
+          <!-- Encabezado -->
+          <header class="header">
+              <h2>Bienvenido Andres</h2>
+              <div class="header-icons">
+                  <span class="icon">🔔</span>
+                  <span class="icon">💬</span>
+                  <span class="icon">👤</span>
+              </div>
+          </header><br><br>
+
+          <!-- Courses Section -->
+          <section class="courses">
+            <h2>Mis cursos</h2><br>
+            <!-- Este contenedor será llenado dinámicamente con JavaScript -->
+            <div id="courses-container"></div>
+          </section>
+        </div>
+    </div>
+
+    <!-- Vinculación del script JavaScript -->
+    <script src="inicioProfesor.js"></script>
+</body>
+</html>

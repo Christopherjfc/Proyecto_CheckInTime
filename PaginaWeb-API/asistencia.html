@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Asistencia Profesor</title>
+    <link rel="stylesheet" href="asistencia.css">
+</head>
+<body>
+    <div class="dashboard">
+        <!-- Menú lateral -->
+        <aside class="sidebar">
+            <button class="menu-toggle" aria-label="Abrir menú">☰</button>
+            <nav class="menu">
+                <ul id="menu-items" style="display: none;"> <!-- Menú oculto inicialmente -->
+                    <li><span class="menu-item" id="inicio-btn">Inicio</span></li>
+                    <li><span class="menu-item" id="gestion-btn">Gestión de clase</span></li>
+                    <li><span class="menu-item" id="horario-btn">Horario</span></li>
+                    <li><span class="menu-item" id="marcaje-btn">Marcaje</span></li>
+                    <li><span class="menu-item" id="logout-btn">Cerrar sesión</span></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <!-- Contenido principal -->
+        <div class="main-content">
+            <!-- Encabezado -->
+            <header class="header">
+                <h2>Asistencia</h2>
+                <div class="header-icons">
+                    <span aria-label="Notificaciones">🔔</span>
+                    <span aria-label="Mensajes">💬</span>
+                    <span aria-label="Perfil">👤</span>
+                </div>
+            </header><br>
+
+            <!-- Tabla de asistencia -->
+            <section class="content">
+                <h3>Tabla de asistencia de los alumnos</h3>
+                <table class="attendance-table">
+                    <thead>
+                        <tr>
+                            <th>Nombre</th>
+                            <th>Asistencia</th>
+                            <th>Retraso</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Juan</td>
+                            <td>❌</td>
+                            <td>0</td>
+                        </tr>
+                        <tr>
+                            <td>Jose</td>
+                            <td>✅</td>
+                            <td>1</td>
+                        </tr>
+                        <tr>
+                            <td>Luis</td>
+                            <td>❌</td>
+                            <td>0</td>
+                        </tr>
+                        <tr>
+                            <td>Maria</td>
+                            <td>✅</td>
+                            <td>1</td>
+                        </tr>
+                        <tr>
+                            <td>Juana</td>
+                            <td>❌</td>
+                            <td>0</td>
+                        </tr>
+                        <tr>
+                            <td>Gabriel</td>
+                            <td>✅</td>
+                            <td>1</td>
+                        </tr>
+                        <tr>
+                            <td>Gabriela</td>
+                            <td>❌</td>
+                            <td>0</td>
+                        </tr>
+                        <tr>
+                            <td>Andrea</td>
+                            <td>✅</td>
+                            <td>0</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <button class="modify-button">Modificar</button>
+            </section>
+        </div>
+    </div>
+    <script src="asistencia.js"></script>
+</body>
+</html>

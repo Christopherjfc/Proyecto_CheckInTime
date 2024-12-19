@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Asistencia Alumno</title>
+    <link rel="stylesheet" href="asistenciaAlumno.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="dashboard">
+        <!-- Menú lateral -->
+        <aside class="sidebar">
+            <button class="menu-toggle">☰</button>
+            <nav class="menu">
+                <ul id="menu-items" style="display: none;"> <!-- Inicialmente oculto -->
+                    <li><span class="menu-item" id="inicio-btn">Inicio</span></li>
+                    <li><span class="menu-item" id="horario-btn">Horario</span></li>
+                    <li><span class="menu-item" id="asistencia-btn">Asistencia</span></li>
+                    <li><span class="menu-item" id="logout-btn">Cerrar sesión</span></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <!-- Contenido principal -->
+        <div class="main-content">
+            <!-- Encabezado -->
+            <header class="header">
+                <h2>Asistencia</h2>
+                <div class="header-icons">
+                    <span class="icon" aria-label="Notificaciones">🔔</span>
+                    <span class="icon" aria-label="Mensajes">💬</span>
+                    <span class="icon" aria-label="Perfil">👤</span>
+                </div>
+            </header>
+            
+            <!-- Sección de resumen -->
+            <div class="summary">
+                <div class="attendance-total">
+                    <h3>Asistencia Total</h3>
+                    <canvas id="pieChart"></canvas><!-- Gráfico de pastel -->
+                </div>
+
+                <!-- Sección de evolución -->
+                <div class="attendance-evolution">
+                    <h3>Evolución de asistencia por día</h3>
+                    <canvas id="lineChart"></canvas> <!-- Gráfico de línea -->
+                </div>
+            </div>
+        </div>
+
+        <!-- Cargar tu archivo JavaScript -->
+        <script src="asistenciaAlumno.js"></script> <!-- Aquí llamas a tu archivo JS -->
+    </body>
+</html>

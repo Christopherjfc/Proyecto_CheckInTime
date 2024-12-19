@@ -1,0 +1,190 @@
+/* Estilos generales */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa; /* Fondo general */
+  }
+  
+  .dashboard {
+    display: flex;
+    height: 100vh;
+  }
+  
+  .sidebar {
+    width: 200px;
+    background-color: #343a40;
+    color: white;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .menu-toggle {
+    background-color: #495057;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    text-align: left;
+  }
+  
+  .menu ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .menu ul li {
+    padding: 10px;
+    cursor: pointer;
+    border-bottom: 1px solid #495057;
+  }
+  
+  .menu ul li:hover {
+    background-color: #495057;
+  }
+  
+  /* Contenido principal */
+  .main-content {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    background-color: #f8f9fa;
+    padding: 20px;
+  }
+  
+  .header {
+    display: flex;
+    justify-content: center; /* Centra el contenido horizontalmente */
+    align-items: center;    /* Centra el contenido verticalmente */
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    position: relative;      /* Permite posicionar los iconos con precisión */
+  }
+  
+  .header h2 {
+    margin: 0;
+    font-size: 24px; /* Tamaño del texto */
+    font-weight: 600; /* Peso de la fuente */
+    text-align: center;
+    flex-grow: 1; /* Hace que el título se expanda y se centre */
+  }
+  
+  .header-icons {
+    position: absolute;      /* Posiciona los iconos en el extremo derecho */
+    right: 20px;
+  }
+  
+  .header-icons span {
+    margin-left: 15px;
+    cursor: pointer;
+  }
+  
+  /* Estilos de las tablas */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: white;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  th, td {
+    text-align: center;
+    padding: 10px;
+    border: 1px solid #dee2e6;
+  }
+  
+  th {
+    background-color: #e9ecef;
+    font-weight: bold;
+  }
+  
+  /* Colores personalizados para las celdas */
+  .gray {
+    background-color: #dee2e6;
+  }
+  
+  .purple {
+    background-color: #d8b0ff;
+  }
+  
+  .green {
+    background-color: #b0ffc6;
+  }
+  
+  .yellow {
+    background-color: #fffb91;
+  }
+  
+  .blue {
+    background-color: #a3d8ff;
+  }
+  
+  .orange {
+    background-color: #ffc992;
+  }
+  
+  .red {
+    background-color: #ff9999;
+  }
+  
+  .pink {
+    background-color: #ffc4d6;
+  }
+  
+  /* Diseño responsive para pantallas pequeñas */
+  @media (max-width: 768px) {
+    .dashboard {
+        flex-direction: column;
+    }
+  
+    .sidebar {
+        width: 100%;
+        height: auto;
+    }
+  
+    .main-content {
+        margin-left: 0;
+        padding: 15px;
+    }
+  
+    .header {
+        flex-direction: column; /* Los iconos se alinean debajo del título en pantallas pequeñas */
+        text-align: center;
+    }
+  
+    .header-icons {
+        margin-top: 10px; /* Espacio entre los iconos */
+    }
+  
+    .header-icons span {
+        margin-left: 10px; /* Ajuste en los márgenes */
+    }
+  }
+  
+  /* Alineación del botón "Modificar" a la derecha */
+  .content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Esto alinea todo a la izquierda por defecto */
+  }
+  
+  .save-modifications-button {
+    background-color: #333;
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 20px;
+    align-self: flex-end; /* Alinea el botón a la derecha */
+  }
+  
+  .modify-button:hover {
+    background-color: #555;
+  }
+  

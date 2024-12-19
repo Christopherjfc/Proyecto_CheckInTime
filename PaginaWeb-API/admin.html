@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Administrador - Gestión de Usuarios</title>
+    <link rel="stylesheet" href="admin.css">
+</head>
+<body>
+    <div class="dashboard">
+        <!-- Menú lateral -->
+        <aside class="sidebar">
+            <h2>Administrador</h2>
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <!-- Enlace de Cerrar Sesión -->
+                <li><a id="logout-btn">Cerrar Sesión</a></li>
+            </ul>
+        </aside>
+
+        <!-- Contenido principal -->
+        <div class="main-content">
+            <header class="header">
+                <h1>Gestión de Alumnos y Profesores</h1>
+            </header>
+            
+            <!-- Formulario para agregar usuarios -->
+            <section class="form-section">
+                <h2>Añadir Usuario</h2><br>
+                <form id="user-form">
+                    <input type="text" id="name" placeholder="Nombre completo" required>
+                    <select id="role" required>
+                        <option value="">Seleccionar Rol</option>
+                        <option value="alumno">Alumno</option>
+                        <option value="profesor">Profesor</option>
+                    </select>
+                    <button type="submit">Añadir</button>
+                </form>
+            </section>
+
+            <!-- Tabla de usuarios -->
+            <section class="table-section">
+                <h2>Lista de Usuarios</h2><br>
+                <table id="user-table">
+                    <thead>
+                        <tr>
+                            <th>Nombre</th>
+                            <th>Rol</th>
+                            <th>Acciones</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Aquí se agregarán las filas dinámicamente -->
+                    </tbody>
+                </table>
+            </section>
+        </div>
+    </div>
+
+    <script src="admin.js"></script>
+</body>
+</html>

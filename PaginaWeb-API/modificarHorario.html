@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Horario Profesor</title>
+    <link rel="stylesheet" href="modificarHorario.css">
+</head>
+<body>
+    <div class="dashboard">
+        <!-- Menú lateral -->
+        <aside class="sidebar">
+            <button class="menu-toggle" aria-label="Abrir menú">☰</button>
+            <nav class="menu">
+                <ul id="menu-items" style="display: none;"> <!-- Menú oculto inicialmente -->
+                    <li><span class="menu-item" id="inicio-btn">Inicio</span></li>
+                    <li><span class="menu-item" id="gestion-btn">Gestión de clase</span></li>
+                    <li><span class="menu-item" id="horario-btn">Horario</span></li>
+                    <li><span class="menu-item" id="marcaje-btn">Marcaje</span></li>
+                    <li><span class="menu-item" id="logout-btn">Cerrar sesión</span></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <!-- Contenido principal -->
+        <div class="main-content">
+            <!-- Encabezado -->
+            <header class="header">
+                <h2>Modificar Horario</h2>
+                <div class="header-icons">
+                    <span aria-label="Notificaciones">🔔</span>
+                    <span aria-label="Mensajes">💬</span>
+                    <span aria-label="Perfil">👤</span>
+                </div>
+            </header>
+                <!-- Nueva sección de interfaz de horarios -->
+                <div class="container">
+                    <h2><span class="icon-pencil">✏️</span> Añade un titulo</h2>
+                    <div class="dropdown-container">
+                        <label>
+                            <select name="aula">
+                                <option value="">Aula</option>
+                                <!-- Opciones adicionales -->
+                            </select>
+                        </label>
+                        <label>
+                            <select name="ciclo">
+                                <option value="">Ciclo</option>
+                                <!-- Opciones adicionales -->
+                            </select>
+                        </label>
+                        <label>
+                            <select name="grupo">
+                                <option value="">Grupo</option>
+                                <!-- Opciones adicionales -->
+                            </select>
+                        </label>
+                        <label>
+                            <select name="curso">
+                                <option value="">Curso</option>
+                                <!-- Opciones adicionales -->
+                            </select>
+                        </label>
+                        <label>
+                            <select name="hora">
+                                <option value="">Hora</option>
+                                <!-- Opciones adicionales -->
+                            </select>
+                        </label>
+                        <label>
+                            <select name="dia">
+                                <option value="">Día</option>
+                                <option value="Lunes">Lunes</option>
+                                <option value="Martes">Martes</option>
+                                <option value="Miércoles">Miércoles</option>
+                                <option value="Jueves">Jueves</option>
+                                <option value="Viernes">Viernes</option>
+                            </select>
+                        </label>
+                    </div>
+                </div>
+            <table>
+              <thead>
+                  <tr>
+                      <th></th>
+                      <th>Lunes</th>
+                      <th>Martes</th>
+                      <th>Miércoles</th>
+                      <th>Jueves</th>
+                      <th>Viernes</th>
+                  </tr>
+              </thead>
+              <tbody>
+                  <tr>
+                      <td>8:00 - 9:00</td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                  </tr>
+                  <tr>
+                      <td>9:00 - 10:00</td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                  </tr>
+                  <tr>
+                      <td>10:00 - 11:00</td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                  </tr>
+                  <tr>
+                      <td>11:00 - 11:30</td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                  </tr>
+                  <tr>
+                      <td>11:30 - 12:30</td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                  </tr>
+                  <tr>
+                      <td>12:30 - 13:30</td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                  </tr>
+                  <tr>
+                      <td>13:30 - 14:30</td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                  </tr>
+                  <tr>
+                      <td>14:30 - 15:30</td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                  </tr>
+                  <tr>
+                      <td>15:30 - 16:30</td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                  </tr>
+                  <tr>
+                      <td>16:30 - 17:30</td>
+                      <td></td>
+                      <td class="gray">A01 <br> ASIX1C</td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                  </tr>
+                  <tr>
+                      <td>17:30 - 18:00</td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                  </tr>
+                  <tr>
+                      <td>18:00 - 19:00</td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                  </tr>
+                  <tr>
+                      <td>19:00 - 20:00</td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                  </tr>
+                  <tr>
+                      <td>20:00 - 21:00</td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                  </tr>
+              </tbody>
+          </table><br>
+          <button class="guardar-button">Guardar</button>
+      </div>
+  </div>
+  <script src="modificarHorario.js"></script>
+</body>
+</html>
