@@ -4,6 +4,9 @@ La carpeta  "**CheckInTime-app**" es la aplicación de android estudio (DAM)
 
 La carpeta "**clientIot**" es el cliente que se creé en el isard para poder leer los datos de la tarjeta RFID.
 
+La carpeta "**API_rest**" es donde se encuentra la API 
+
+La carpeta "**PaginaWeb-API**" es la pagina web (DAW)
 
 
 En el figma se encuentra la interficie de la aplicación móvil (DAM) y de la página web (DAW)
